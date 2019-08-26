@@ -1,7 +1,8 @@
-import {createAppContainer, createStackNavigator} from 'react-navigation';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import Main from './pages/Main';
 import User from './pages/User';
+import Repository from './pages/Repository';
 
 /*
  * O createStackNavigator (navegação em pilha) cria um menu no Header
@@ -21,6 +22,7 @@ const Routes = createAppContainer(
     {
       Main,
       User,
+      Repository,
     },
     {
       headerLayoutPreset: 'center',
@@ -31,8 +33,8 @@ const Routes = createAppContainer(
         },
         headerTintColor: '#fff',
       },
-    }
-  )
+    },
+  ),
 );
 
 export default Routes;
